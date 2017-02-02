@@ -1,19 +1,14 @@
-const React = require('react')
-const
-
+import React from 'react'
 
 class Invitation extends React.Component {
-
   render () {
     return (
       <div>
-        <h1>You have been invited!</h1>
+        <h1>You've been invited!</h1>
+        <p>{this.props.children}</p>
       </div>
     )
   }
-
 }
-
-
 
 module.exports = Invitation
